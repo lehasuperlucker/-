@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: white; -fx-border-width: 5;" styleClass="back" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.User.UserAddTransactionWindow.UserAddTransactionWindowController">
+    <children>
+        <Label layoutX="76.0" layoutY="14.0" text="Добавление финансовой операции" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="26.0" />
+            </font>
+        </Label>
+        <TextField fx:id="vrField" layoutX="38.0" layoutY="142.0" promptText="ВР" />
+        <TextField fx:id="rpField" layoutX="38.0" layoutY="200.0" promptText="РП" />
+        <TextField fx:id="r1Field" layoutX="38.0" layoutY="256.0" promptText="R1" />
+        <TextField fx:id="r2Field" layoutX="38.0" layoutY="289.0" promptText="R2" />
+        <TextField fx:id="r3Field" layoutX="38.0" layoutY="320.0" promptText="R3" />
+        <TextField fx:id="p1Field" layoutX="351.0" layoutY="87.0" promptText="P1" />
+        <TextField fx:id="p2Field" layoutX="351.0" layoutY="120.0" promptText="P2" />
+        <TextField fx:id="p3Field" layoutX="351.0" layoutY="155.0" promptText="P3" />
+        <TextField fx:id="ravgField" layoutX="351.0" layoutY="234.0" promptText="Ravg" />
+        <Label layoutX="39.0" layoutY="123.0" text="Вероятность возникновения риска">
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill>
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="38.0" layoutY="178.0" text="Размер возможных финансовых потерь" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="39.0" layoutY="237.0" text="Отдельные возможные доходы по операции" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="39.0" layoutY="65.0" text="Наименование" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nameField" layoutX="39.0" layoutY="87.0" />
+        <Label layoutX="274.0" layoutY="65.0" prefHeight="19.0" prefWidth="304.0" text="Вероятность получения отдельных доходов" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="339.0" layoutY="216.0" text="Средний ожидаемый доход" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Label>
+        <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" onAction="#goBackClick" text="Назад" />
+        <Button layoutX="232.0" layoutY="339.0" mnemonicParsing="false" onAction="#addTransactionClick" text="Добавить">
+            <font>
+                <Font name="System Bold Italic" size="21.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

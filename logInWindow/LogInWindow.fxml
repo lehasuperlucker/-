@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #fafafa; -fx-border-color: white; -fx-border-width: 5;" styleClass="back" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.logInWindow.LogInWindowController">
+   <children>
+      <Label layoutX="230.0" layoutY="24.0" prefHeight="63.0" prefWidth="278.0" text="Авторизация" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginSignupButton" layoutX="518.0" layoutY="24.0" mnemonicParsing="false" onAction="#clickSignUp" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: #F39C63;" text="Зарегистрироваться">
+         <font>
+            <Font name="Arial Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="loginField" layoutX="188.0" layoutY="128.0" prefHeight="25.0" prefWidth="324.0" promptText="Логин" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Button fx:id="authSignInButton" layoutX="277.0" layoutY="274.0" mnemonicParsing="false" onAction="#clickSignIn" prefHeight="25.0" prefWidth="146.0" style="-fx-background-color: #F39C63;" text="Войти">
+         <font>
+            <Font name="Chiller" size="25.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="passwordField" layoutX="189.0" layoutY="200.0" prefHeight="40.0" prefWidth="324.0" promptText="Пароль">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

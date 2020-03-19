@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: white; -fx-border-width: 5;" styleClass="back" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.User.UserAddCompanyWindow.AddCompanyWindowController">
+   <children>
+      <Label layoutX="54.0" text="Добавление предприятия" textFill="#fbff04">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameField" layoutX="37.0" layoutY="66.0" promptText="Название">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="formField" layoutX="37.0" layoutY="113.0" promptText="Форма сообщества">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="districtField" layoutX="37.0" layoutY="160.0" promptText="Район">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="regionField" layoutX="37.0" layoutY="210.0" promptText="Область">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emplField" layoutX="37.0" layoutY="257.0" promptText="Численность сотрудников">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ownerField" layoutX="359.0" layoutY="66.0" promptText="Владелец">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="yearField" layoutX="359.0" layoutY="113.0" promptText="Год основания">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addressField" layoutX="359.0" layoutY="160.0" promptText="Адрес">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="mailField" layoutX="359.0" layoutY="210.0" promptText="Электронная почта">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="websiteField" layoutX="359.0" layoutY="257.0" promptText="Адрес в сети Интернет">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="233.0" layoutY="321.0" mnemonicParsing="false" onAction="#addCompanyClick" text="Добавить">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="520.0" layoutY="354.0" mnemonicParsing="false" onAction="#returnToUserWindow" text="Назад" />
+   </children>
+</AnchorPane>

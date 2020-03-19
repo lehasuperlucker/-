@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" style="-fx-border-color: white; -fx-border-width: 5;" styleClass="back" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.User.UserTransactionsWindow.UserTransactionsWindowController">
+    <children>
+        <Label layoutX="211.0" text="Финансовые операции" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="34.0" />
+            </font>
+        </Label>
+        <TableView fx:id="transactionTable" layoutX="14.0" layoutY="50.0" prefHeight="200.0" prefWidth="775.0">
+            <columns>
+                <TableColumn fx:id="transactionIdColumn" prefWidth="41.0" text="код операции" />
+                <TableColumn fx:id="companyIdColumn" prefWidth="47.0" text="код предприятия" />
+                <TableColumn fx:id="userIdColumn" prefWidth="43.0" text="код пользователя" />
+                <TableColumn fx:id="nameColumn" prefWidth="99.0" text="наименование" />
+                <TableColumn fx:id="riskColumn" prefWidth="126.0" text="уровень фин.риска" />
+                <TableColumn fx:id="deviationColumn" prefWidth="142.0" text="ср.кв.отклонение,у.е." />
+                <TableColumn fx:id="dispersionColumn" prefWidth="100.0" text="дисперсия,у.е." />
+                <TableColumn fx:id="variationColumn" prefWidth="176.0" text="коэффициент вариации,у.е." />
+            </columns>
+        </TableView>
+        <Button layoutX="734.0" layoutY="361.0" mnemonicParsing="false" onAction="#goBackClick" text="Назад" />
+        <Button layoutX="14.0" layoutY="292.0" mnemonicParsing="false" onAction="#addNewTransactionClick" prefHeight="25.0" prefWidth="310.0" text="Добавить новую операцию">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="500.0" layoutY="292.0" mnemonicParsing="false" onAction="#calcRiskClick" prefHeight="25.0" prefWidth="127.0" text="уровень фин.риска" />
+        <Button layoutX="660.0" layoutY="292.0" mnemonicParsing="false" onAction="#calcDeviationClick" prefHeight="25.0" prefWidth="120.0" text="ср.кв.отклонение" />
+        <Button layoutX="500.0" layoutY="327.0" mnemonicParsing="false" onAction="#calcDispersionClick" prefHeight="25.0" prefWidth="127.0" text="дисперсия" />
+        <Button layoutX="660.0" layoutY="327.0" mnemonicParsing="false" onAction="#calcVariationClick" prefHeight="25.0" prefWidth="120.0" text="коэф.вариации" />
+        <Label layoutX="605.0" layoutY="260.0" text="Расчёт">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+        </Label>
+        <Button layoutX="14.0" layoutY="342.0" mnemonicParsing="false" onAction="#saveToFileClick" prefHeight="12.0" prefWidth="310.0" text="Сохранить данные в файл">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Button>
+        <Button layoutX="331.0" layoutY="342.0" mnemonicParsing="false" onAction="#showPieChart" prefHeight="39.0" prefWidth="156.0" text="Круговая диаграмма">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
